@@ -75,7 +75,7 @@ function commandFleet(cars){
 
 function addOneCarPerDay(cars, numDays){
   for(var day = 0; day < numDays; day++) {
-    newCar = getNewCar;
+    newCar = getNewCar();
     console.log(addCar(cars, newCar));
     commandFleet(cars);
   }
@@ -83,4 +83,4 @@ function addOneCarPerDay(cars, numDays){
 
 
 var cars = [];
-console.log(addOneCarPerDay(cars, 10));
+addOneCarPerDay(cars, 10);
